@@ -1,12 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Forms challenge</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
     <script defer src="index.js"></script>
   </head>
   <body>
+    <main>
     <h1>We want your feedback!</h1>
 <p>
     We're very excited that you visited <a href="#">the little house in the woods</a>,
@@ -14,8 +15,7 @@
     sections. You don't need to provide your name or contact details, but
     if you do, we'll enter you into a <a href="#">prize draw</a> where you'll have a chance
     to win prizes.
-
-</p>
+  </p>
 
  <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" alt="A stripy woodland scene" />
  
@@ -26,9 +26,9 @@
    <h2>Facilities</h2>
    <fieldset class="separator">
     <legend>How was the porridge?</legend>
-<label>
-  <input type="radio" name="porridge" value="too-hot" />
-</label>
+   <label>
+   <input type="radio" name="porridge" value="too-hot" />
+   </label>
     <label>
       <input type="radio" name="porridge" value="too-cold" />
     </label>
@@ -36,8 +36,9 @@
       <input type="radio" name="porridge" value="just-right" />
     </label>
    </fieldset>
-  </section>
-  <fieldset class="separator">
+   </section>
+
+   <fieldset class="separator">
     <legend>How were the beds?</legend>
     <label>
       <input type="radio" name="beds" value="too-hard" />
@@ -48,8 +49,10 @@
     <label>
       <input type="radio" name="beds" value="just-right" />
     </label>
-  </fieldset>
-  <fieldset class="separator">
+   </fieldset>
+
+
+   <fieldset class="separator">
     <legend>How were the chairs?</legend>
     <label>
       <input type="checkbox" name="chairs" value="comfy" />
@@ -72,36 +75,29 @@
       Majestic
     </label>
   </fieldset>
-  </section>
 
     <section class="form-section">
       <h2>About your hosts</h2>
-      <fieldset class="separator">
-        <legend>Who's your favorite bear?</legend>
-        <label for="favorite-bear">
-          <select name="favorite-bear" id="favorite-bear">
-            <option value="papa">Papa bear</option>
-            <option value="mama">Mama bear</option>
-            <option value="junior">Junior</option>
-            <option value="dozer">Dozer</option>
+      <div class="separator">
+        <label for="favorite-bear">Who's your favorite bear?</label>
+          <select  id="favorite-bear" name="favorite-bear">
+            <option>Papa bear</option>
+            <option>Mama bear</option>
+            <option>Junior</option>
+            <option>Dozer</option>
           </select>
-        </label>
-      </fieldset>
-    </section>
+        </div>
 
-    </section>
-    <h2>About your greeting</h2>
-    <fieldset class="separator">
-      <legend>How did we greet you?</legend>
-      <label for="greeting">
-        <select name="greeting" id="greeting" multiple>
-          <option value="friendly">Friendly greeting</option>
-          <option value="growl">Growl</option>
-          <option value="claw-marks">Claw marks in the door</option>
+        <div class="separator">
+        <label for="favored-greeting">What's your favorite greeting?</label>
+        <select id="favored-greeting" name="favored-greeting">
+          <option>Friendly greeting</option>
+          <option>Growl</option>
+          <option>Claw marks in the door</option>
+          <option>Wave</option>
         </select>
-      </label>
-    </fieldset>
-  </section>
+      </div>
+    </section>
 
 
   <section class="form-section">
@@ -122,5 +118,6 @@
 
   <button type="submit">Submit</button>
 </form>
+</main>
   </body>
 </html>
